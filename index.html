@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link css -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- link login y registro -->
+    <link rel="stylesheet" href="login.html" />
+    <link rel="stylesheet" href="registro.html" />
+    <!-- link mediaqueries -->
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- link animaciones -->
+    <link rel="stylesheet" href="animaciones.css" />
+    <!-- cdn fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>Limpiezas Energéticas</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img class="logo" src="/img/logo.png" alt="logo" />
+      <!-- Nav -->
+      <nav class="navbar">
+        <!-- login y registro -->
+        <a href="login.html" class="btn-login">Iniciar Sesión</a>
+        <a href="registro.html" class="btn-registro">Registrate acá</a>
+        <!-- menu -->
+        <label for="menu-toggle" class="menu-label">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+        <ul class="navbar-list">
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#info">Servicios</a></li>
+          <li><a href="#products">Productos Energéticos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <!-- carrito -->
+        <label for="cart-toggle" class="cart-label">
+          <i class="fa-solid fa-cart-shopping cart-icon"></i>
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+        <div class="cart">
+          <h2>Mis elegidos</h2>
+          <!-- producto -->
+          <div class="cart-item">
+            <img
+              class="amatista-cart"
+              src="./img/piedras/Amatista.jfif"
+              alt="Amatista"
+            />
+            <!-- info producto -->
+            <div class="item-info">
+              <h3 class="item-title">Amatista</h3>
+              <p class="item-price">$5.000</p>
+              <!-- Botones -->
+              <div class="item-handler">
+                <span class="quantity-handler down">-</span>
+                <span class="item-quantity">2</span>
+                <span class="quantity-handler up">+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <img
+              class="cuarzo-cart"
+              src="./img/piedras/Cuarzo Transparente.jfif"
+              alt="Cuarzo"
+            />
+            <!-- info producto -->
+            <div class="item-info">
+              <h3 class="item-title">Cuarzo</h3>
+              <p class="item-price">$5.000</p>
+              <!-- Botones -->
+              <div class="item-handler">
+                <span class="quantity-handler down">-</span>
+                <span class="item-quantity">1</span>
+                <span class="quantity-handler up">+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <img
+              class="labradorita-cart"
+              src="./img/piedras/labradorita.jfif"
+              alt="Labradorita"
+            />
+            <!-- info producto -->
+            <div class="item-info">
+              <h3 class="item-title">Labradorita</h3>
+              <p class="item-price">$5.000</p>
+              <!-- Botones -->
+              <div class="item-handler">
+                <span class="quantity-handler down">-</span>
+                <span class="item-quantity">1</span>
+                <span class="quantity-handler up">+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <img
+              class="turmalina-cart"
+              src="./img/piedras/Turmalina.jfif"
+              alt="Turmalina"
+            />
+            <!-- info producto -->
+            <div class="item-info">
+              <h3 class="item-title">Turmalina Negra</h3>
+              <p class="item-price">$10.000</p>
+              <!-- Botones -->
+              <div class="item-handler">
+                <span class="quantity-handler down">-</span>
+                <span class="item-quantity">4</span>
+                <span class="quantity-handler up">+</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Linea divisora -->
+          <span class="divisor"></span>
+
+          <div class="cart-total">
+            <p>Total:</p>
+            <span>$70.000</span>
+          </div>
+          <button class="btn-add">Comprar</button>
+        </div>
+        <div class="overlay"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="hero">
+        <div class="hero-info">
+          <h1>Terapeuta Energético Espiritual</h1>
+          <p>
+            Bienvenido a mi espacio de sanación espiritual donde te puedo ayudar
+            a liberar bloqueos, abrir caminos, elevar tu vibración y conectar
+            con tu verdadero ser. A través de limpiezas energéticas con
+            distintos métodos y lecturas de tarot.
+          </p>
+          <a class="btn-turno" href="#">Agendá tu turno</a>
+        </div>
+        <!-- card -->
+        <div class="hero-card">
+          <img class="img-card" src="./img/mdc/mujer mdc.jpg" alt="terapeuta" />
+          <div class="hero-card-info">
+            <!-- Titulo card -->
+            <div class="hero-card-title">
+              <h3>Maru</h3>
+            </div>
+            <!-- info creador card -->
+            <div class="hero-card-creator">
+              <p>Terapeuta del método JOI</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- info -->
+      <section id="info">
+        <!-- About us -->
+        <h2>Limpiezas Energéticas</h2>
+        <p>Distintos métodos</p>
+        <div class="info-cards-container">
+          <!-- card 1 MDC -->
+          <div class="info-card">
+            <img src="./img/mdc/mesa dim.jpg" alt="mdc" />
+          </div>
+          <h3 class="card-title">Mesa Dimensional Cuántica</h3>
+          <span class="texto-mesa"
+            >Es una herramienta para crecimiento y evolución. Conecta con la
+            fuente creadora, con los tronos, Ángeles y Arcángeles. Opera con
+            energías de muy alta frecuencia y geometría sagrada, utilizando
+            radiónica y radiestesia para realizar infinidad de ajustes. Tanto en
+            el plano físico como en los planos energéticos, mental, emocional y
+            espiritual, llevando las energías a la más alta frecuencia y
+            eliminando todo lo que esté bloqueando o perturbando a la
+            persona.</span
+          >
+          <a class="btn-turno" href="#">Agendá tu turno</a>
+          <!-- card 2 AM -->
+          <div class="info-card">
+            <img src="./img/apometria.png" alt="apometria" />
+          </div>
+          <h3 class="card-title">Apometría Mística</h3>
+          <span class="texto-mesa"
+            >Es una técnica de sanación espiritual que utiliza la energía y la
+            intención para limpiar y equilibrar cuerpos energéticos. Permite
+            liberar bloqueos, conectar con guías espirituales y acceder a planos
+            elevados para sanar aspectos físicos, mentales y emocionales.
+          </span>
+          <a class="btn-turno" href="#">Agendá tu turno</a>
+          <!-- card 3 Tarot -->
+          <h2>Lectura de Tarot</h2>
+          <div class="info-card">
+            <img src="./img/tarot/cartas tarot.jfif" alt="tarot" />
+          </div>
+          <h3 class="card-title">Tarot</h3>
+          <span class="texto-mesa"
+            >Es un método de adivinación basado en un mazo de cartas simbólicas
+            que proporcionan respuestas claras y detalladas sobre temas
+            específicos de la vida. Se usa para obtener orientación sobre
+            relaciones, trabajo, finanzas y decisiones, ayudando a revelar
+            patrones y posibles futuros.
+          </span>
+          <a class="btn-turno" href="#">Agendá tu turno</a>
+        </div>
+      </section>
+      <!-- Descubre -->
+      <section id="discover">
+        <div class="discover-info">
+          <h2>Especial fin de año</h2>
+          <div class="discover-text">
+            <p>
+              Elegi la limpieza que más te guste y empeza el 2025 con todas las
+              buenas energías, con nuevos caminos y oportunidades para que sea
+              un año lleno de abundancia para vos y toda tu familia.
+            </p>
+            <a class="btn-turno" href="#">Agendar Turno</a>
+          </div>
+        </div>
+      </section>
+      <!-- Productos -->
+      <section id="products">
+        <h2>Productos Energéticos</h2>
+        <div class="products-container">
+          <!-- product 1 -->
+          <div class="product">
+            <img src="./img/piedras/Pendulo.jfif" alt="pendulo" />
+
+            <div class="product-info">
+              <!-- top -->
+              <div class="product-top">
+                <h3>Péndulo</h3>
+                <p>
+                  herramienta para detectar y equilibrar la energía, y también
+                  para obtener respuestas mediante radiestesia, conectando con
+                  la intuición y la energía del entorno.
+                </p>
+              </div>
+              <!-- mid -->
+              <div class="product-mid">
+                <span class="product-price">$15.000</span>
+              </div>
+              <!-- bot -->
+              <div class="product-bottom">
+                <button class="btn-add">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <!-- product 2 -->
+          <div class="product">
+            <img src="./img/piedras/Amatista.jfif" alt="amatista" />
+
+            <div class="product-info">
+              <!-- top -->
+              <div class="product-top">
+                <h3>Amatista</h3>
+                <p>
+                  Piedra para calmar la mente, protege de las energías negativas
+                  y favorece la paz interior.
+                </p>
+              </div>
+              <!-- mid -->
+              <div class="product-mid">
+                <span class="product-price">$5000</span>
+              </div>
+              <!-- bot -->
+              <div class="product-bottom">
+                <button class="btn-add">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <!-- product 3 -->
+          <div class="product">
+            <img src="./img/piedras/labradorita.jfif" alt="labradorita" />
+
+            <div class="product-info">
+              <!-- top -->
+              <div class="product-top">
+                <h3>Labradorita</h3>
+                <p>
+                  Piedra que protege el aura, eleva la conciencia y fortalece la
+                  intuición, es ideal para la transformación y crecimiento
+                  espiritual.
+                </p>
+              </div>
+              <!-- mid -->
+              <div class="product-mid">
+                <span>$5000</span>
+              </div>
+              <!-- bot -->
+              <div class="product-bottom">
+                <button class="btn-add">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <!-- product 4 -->
+          <div class="product">
+            <img src="./img/piedras/Cuarzo Transparente.jfif" alt="cuarzo" />
+
+            <div class="product-info">
+              <!-- top -->
+              <div class="product-top">
+                <h3>Cuarzo</h3>
+                <p>
+                  Piedra para amplificar la energía, promover la claridad mental
+                  y equilibrar el cuerpo, ayuda a la protección energética.
+                </p>
+              </div>
+              <!-- mid -->
+              <div class="product-mid">
+                <span class="product-price">$5000</span>
+              </div>
+              <!-- bot -->
+              <div class="product-bottom">
+                <button class="btn-add">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <!-- product 5 -->
+          <div class="product">
+            <img src="./img/piedras/Turmalina.jfif" alt="turmalina" />
+
+            <div class="product-info">
+              <!-- top -->
+              <div class="product-top">
+                <h3>Turmalina</h3>
+                <p>
+                  Piedra con una poderosa capacidad de protección, absorbe y
+                  repele las energías negativas, ayudando a amntener el
+                  equilibrio y la estabilidad emocional.
+                </p>
+              </div>
+              <!-- mid -->
+              <div class="product-mid">
+                <span class="product-price">$10.000</span>
+              </div>
+              <!-- bot -->
+              <div class="product-bottom">
+                <button class="btn-add">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn-turno">Ver más</button>
+      </section>
+
+      <!-- contacto -->
+      <section id="contacto">
+        <h3>contacto</h3>
+        <!-- formulario de contacto -->
+        <form action="mensaje">
+          <div class="formulario">
+            <!-- nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Nombre completo" />
+            <!-- mail -->
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" placeholder="Correo electrónico" />
+            <!-- tel -->
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" placeholder="numero de teléfono" />
+            <!-- comentario/consulta -->
+            <label for="mensaje">Consulta:</label>
+            <textarea
+              id="mensaje"
+              rows="5"
+              placeholder="Deje su consulta aquí:"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Enviar Consulta</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <nav>
+        <ul class="footer-info">
+          <li><a href="#">Términos de uso</a></li>
+          <li>
+            <a class="instagram" href="#">
+              <i class="fa-brands fa-instagram"></i> Instagram: @maru.yanguas</a
+            >
+          </li>
+          <li>
+            <a class="email" href="#">
+              <i class="fa-solid fa-at"></i> e-mail: terapeuta@gmail.com</a
+            >
+          </li>
+
+          <li>
+            <a class="ubicacion" href="#">
+              <i class="fa-solid fa-map-location-dot"></i> Buenos Aires,
+              Argentina</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <p>Aylen Yanguas</p>
+    </footer>
+  </body>
+</html>

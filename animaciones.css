@@ -1,0 +1,112 @@
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 65px;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(254, 255, 253, 0);
+  backdrop-filter: blur(18.5px);
+  opacity: 0;
+  transform: translate(-200%);
+  transition: opacity 0.5s ease;
+  -webkit-transform: translate(-200%);
+  -moz-transform: translate(-200%);
+  -ms-transform: translate(-200%);
+  -o-transform: translate(-200%);
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+}
+
+#cart-toggle:checked ~ .overlay,
+#menu-toggle:checked ~ .overlay {
+  /*display: block;
+  */
+  transform: translate(0);
+  opacity: 1;
+}
+
+.navbar-list li {
+  position: relative;
+  padding: 0;
+}
+
+.navbar-list li a::after {
+  content: "";
+  background: var(--text-rosa);
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.1s ease;
+  -webkit-transition: transform 0.1s ease;
+  -moz-transition: transform 0.1s ease;
+  -ms-transition: transform 0.1s ease;
+  -o-transition: transform 0.1s ease;
+}
+
+.navbar-list li a:hover::after {
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.cart {
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+.cart-icon:hover {
+  color: var(--text-rosa);
+  border-color: blueviolet;
+}
+
+.quantity-handler {
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+.quantity-handler:hover {
+  cursor: pointer;
+  background-color: var(--text-rosa);
+}
+
+.btn-turno {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.btn-turno:hover {
+  background-color: purple;
+}
+
+.btn-add {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.btn-add:hover {
+  background-color: blue;
+}
