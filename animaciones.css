@@ -110,3 +110,61 @@
 .btn-add:hover {
   background-color: blue;
 }
+
+@keyframes slide-up {
+  from {
+    transform: translateY(1200px);
+    -webkit-transform: translateY(1200px);
+    -moz-transform: translateY(1200px);
+    -ms-transform: translateY(1200px);
+    -o-transform: translateY(1200px);
+  }
+  to {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+}
+
+.hero-info h1 {
+  animation: fade 1s;
+  -webkit-animation: fade 1s ease-in, slide-up 1.4s ease-in-out;
+}
+
+.hero-info p {
+  /* opacity: 0; */
+  animation: fade 0.7s ease-in forwards, slide-up 0.8s ease-in-out;
+  -webkit-animation: fade 0.7s ease-in forwards, slide-up 0.8s ease-in-out;
+  animation-delay: 0.2s;
+}
+
+.hero-info a {
+  animation: fade 0.7s ease-in forwards, slide-up 0.8s ease-in-out;
+  -webkit-animation: fade 0.7s ease-in forwards, slide-up 0.8s ease-in-out;
+  animation-delay: 0.3s;
+}
+
+.hero-card {
+  animation: fade 1s ease-in forwards, slide-right 1.5s ease-in-out;
+  -webkit-animation: fade 1s ease-in forwards, slide-right 1.5s ease-in-out;
+  animation-delay: 0.3s;
+}
