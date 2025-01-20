@@ -1,6 +1,11 @@
 /* TABLET */
 
 @media (max-width: 989px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .navbar {
     gap: 10px;
   }
@@ -89,7 +94,7 @@
 
   /* productos */
   .products-container {
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
 
@@ -104,12 +109,14 @@
   .cart.item {
     flex-wrap: wrap;
   }
+  .hero-info h1 {
+    font-size: 30px;
+  }
   .hero-info p {
     width: 100%;
   }
   .hero-card {
     width: 100%;
-    height: 150px;
   }
   #discover {
     width: 80%;
@@ -129,11 +136,23 @@
 
   /* productos */
   .products-container {
-    width: 80%;
+    grid-template-columns: 1fr;
   }
 
   .footer-info {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .info-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-card {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
