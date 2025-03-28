@@ -156,3 +156,74 @@
     margin-bottom: 20px;
   }
 }
+
+@media (min-width: 1024px) {
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .card {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-info h1 {
+    font-size: 24px;
+    width: 90%;
+  }
+
+  .hero-info p {
+    font-size: 14px;
+    width: 90%;
+    line-height: 1.6;
+  }
+
+  .info-cards-container {
+    max-width: 90%;
+    gap: 1rem;
+  }
+
+  .text {
+    width: 100%;
+    word-wrap: break-word;
+  }
+}
+
+@media (max-width: 350px) {
+  .hero-info h1 {
+    font-size: 22px;
+    width: 90%;
+  }
+
+  .hero-info p {
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 989px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-icon {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-list {
+    position: absolute;
+    top: 100px;
+  }
+}

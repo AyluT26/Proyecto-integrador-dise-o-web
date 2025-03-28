@@ -38,6 +38,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 header {
   background: rgb(0, 31, 63);
   background: linear-gradient(
@@ -50,7 +55,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
+  padding: 10px 20px;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -115,6 +120,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  top: 100px;
 }
 
 .navbar-list a {
@@ -187,6 +193,8 @@ header {
   font-size: 1rem;
   color: whitesmoke;
   cursor: pointer;
+  position: relative;
+  top: 0;
 }
 
 .cart {
@@ -839,6 +847,7 @@ h2 {
 }
 
 .formulario {
+  margin: 0 auto;
   margin-bottom: 15px;
 }
 .formulario label {
